@@ -1,1 +1,7 @@
-aqui vai ficar as bibliotecas que serão usadas no projeto py
+# aqui vai ficar as bibliotecas que serão usadas no projeto py
+pandas
+numpy
+scikit-learn
+imblearn 
+matplotlib
+seaborn
