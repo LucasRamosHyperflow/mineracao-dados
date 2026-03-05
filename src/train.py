@@ -64,7 +64,7 @@ def train_model(X_train, y_train):
 def evaluate_model(clf, X_test, y_test):
     """
     Faz uma avaliação rápida para garantir que o modelo não está quebrado.
-    A avaliação visual profunda será feita pelo Membro 4.
+    A avaliação visual profunda será feita
     """
     logger.info("Avaliando performance preliminar...")
     y_pred = clf.predict(X_test)
