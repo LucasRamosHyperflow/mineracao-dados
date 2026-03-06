@@ -191,7 +191,14 @@ mineracao-dados/
 - **SO alvo para execução dos scripts:** Linux/Ubuntu (por exemplo, Ubuntu 20.04+)
 - **Ferramentas:** `git`, `python3`, `pip`, acesso a `sudo` para instalar pacotes, se necessário
 
-### 1. Verificar/instalar Python 3 (Ubuntu)
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/LucasRamosHyperflow/mineracao-dados.git
+cd mineracao-dados
+```
+
+### 2. Verificar/instalar Python 3 (Ubuntu)
 
 Abra um terminal no Ubuntu e execute:
 
@@ -206,26 +213,43 @@ else
 fi
 ```
 
-### 2. Clonar o repositório
+### 3. Criar e usar o ambiente virtual (Ubuntu)
+
+No Ubuntu (bash ou zsh), a partir da raiz do projeto:
 
 ```bash
-git clone https://github.com/LucasRamosHyperflow/mineracao-dados.git
-cd mineracao-dados
+python3 -m venv .venv      # cria o ambiente virtual
+source .venv/bin/activate  # ativa o ambiente
 ```
 
-### 3. Instalar dependências
+Sempre que for trabalhar no projeto em uma nova sessão de terminal, ative novamente:
+
+```bash
+cd /caminho/para/mineracao-dados
+source .venv/bin/activate
+```
+
+Para sair do ambiente virtual depois de usar o projeto:
+
+```bash
+deactivate
+```
+
+### 4. Instalar as dependências dentro do ambiente virtual
+
+Com o ambiente virtual já **ativado**:
 
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. Colocar o dataset na pasta `data/`
+### 5. Colocar o dataset na pasta `data/`
 
 - Baixe o arquivo `onlinefraud.csv` conforme instruções em `data/README.md`.
 - Copie o arquivo para a pasta `data/` na raiz do projeto.
 
-### 5. Executar o pipeline completo
+### 6. Executar o pipeline completo
 
 No terminal (a partir da raiz do projeto):
 
