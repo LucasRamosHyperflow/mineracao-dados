@@ -1,11 +1,3 @@
-"""
-Módulo de Avaliação e Visualização de Resultados.
-Avalia automaticamente o Random Forest (rf) e a Regressão Logística (lr)
-e gera os gráficos comparativos na pasta reports/figures.
-
-Autor: Equipe do Projeto (Membro 4)
-"""
-
 import gc
 import sys
 import logging

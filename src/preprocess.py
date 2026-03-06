@@ -1,10 +1,3 @@
-"""
-Módulo de Pré-processamento de Dados para Detecção de Fraude.
-Responsável por carregar, limpar, transformar e salvar os dados processados.
-
-Autor: Equipe do Projeto (Membro 1 e 2)
-"""
-
 import logging
 import numpy as np
 import pandas as pd

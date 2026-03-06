@@ -103,7 +103,7 @@ def main():
 
     # Executa automaticamente para todos os modelos do dicionário
     for key, (name, clf, filename) in models.items():
-        # Treina, faz CV (5 folds) e avalia
+        # Treina, faz CV (3 folds) e avalia
         trained_model = train_and_evaluate(name, clf, X_train, y_train, X_test, y_test)
         
         # Salva o arquivo .pkl

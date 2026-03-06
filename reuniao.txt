@@ -1,3 +1,0 @@
-5 folds cross validation
-depois checar toda a base que nao foi usada para saber o que o programa ia falar que é fraude ou nao
-trocar de F1-score para F1-macro
